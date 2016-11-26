@@ -16104,7 +16104,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gordok Mage-Lord (3.3.3 Official Data)
 ('1144401','11444','4','0','10','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Gordok Mage-Lord - Random Say on Aggro'),
 ('1144402','11444','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Gordok Mage-Lord - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('1144403','11444','9','5','100','1','.','40','3500','4900','11','15530','1','0','0','0','0','0','0','0','0','0','Gordok Mage-Lord - Cast Frostbolt (Phase 1)'),
+('1144403','11444','9','5','100','1','0','40','3500','4900','11','15530','1','0','0','0','0','0','0','0','0','0','Gordok Mage-Lord - Cast Frostbolt (Phase 1)'),
 ('1144404','11444','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Gordok Mage-Lord - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1144405','11444','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Gordok Mage-Lord - Disable Dynamic Movement at 0-8 Yards'),
 ('1144406','11444','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Gordok Mage-Lord - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
@@ -16525,16 +16525,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Arcane Feedback (3.3.3 Official Data)
 ('1440001','14400','1','0','100','1','1000','1000','600000','600000','11','15507','0','0','0','0','0','0','0','0','0','0','Arcane Feedback - Cast Lightning Shield on Spawn'),
 ('1440002','14400','27','0','100','1','15507','1','15000','30000','11','15507','0','0','0','0','0','0','0','0','0','0','Arcane Feedback - Cast Lightning Shield on Missing Buff'),
--- Xorothian Imp (14482) - NSR
+-- Xorothian Imp
+('1448201','14482','30','0','100','2','5','14501','0','0','11','12980','0','0','0','0','0','0','0','0','0','0',' Xorothian Imp - Cast Simple Teleport on AI Event received'),
 -- Dread Guard
 ('1448301','14483','0','0','100','1','6000','10000','9000','12000','11','15284','1','1','0','0','0','0','0','0','0','0','Dread Guard - Cast Cleave'),
 ('1448302','14483','0','0','100','1','9000','12000','7000','12000','11','18663','1','0','0','0','0','0','0','0','0','0','Dread Guard - Cast Shadow Shock'),
+('1448303','14483','30','0','100','2','5','14501','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Dread Guard - Cast Simple Teleport on AI Event received'),
 -- J'eevee     14500
 -- Xorothian Dreadsteed
 ('1450201','14502','0','0','100','0','1000','1000','0','0','11','16636','1','0','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Cast Berserker Charge on Aggro'),
 ('1450202','14502','0','0','100','1','4000','8000','20000','25000','11','22713','4','0','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Cast Flame Buffet'),
-('1450203','14502','2','0','100','2','50','0','0','0','12','14506','1','30000','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Summon Lord Hel''nurath at 50% HP'),
-('1450204','14502','6','0','100','2','0','0','0','0','11','23159','0','7','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Summon Dreadsteed Spirit on Death'),
+('1450203','14502','6','0','100','2','0','0','0','0','11','23159','0','7','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Summon Dreadsteed Spirit on Death'),
+('1450204','14502','2','0','100','2','50','0','0','0','12','14506','1','30000','0','0','0','0','0','0','0','0','Xorothian Dreadsteed - Summon Lord Hel''nurath at 50% HP'),
 -- Dreadsteed Spirit (14504) - NSR
 -- Lord Hel'nurath
 ('1450601','14506','0','0','100','3','5000','9000','22000','25000','11','17146','1','0','0','0','0','0','0','0','0','0','Lord Hel\'nurath - Cast Shadow Word: Pain'),
@@ -21803,7 +21805,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1395','Embrace the end!','0','0','0','Common Text','0'),
 ('-1396','Carnage!  May I spill blood in His name!','0','0','0','Common Text','0'),
 ('-1397','My death matters little... the Hammer will still fall!','0','0','0','Common Text','0'),
-('-1461','Who dares steal my precious mount? You will pay for your insolence, mortal!','0','1','0','0','Lord Hel\'nurath - Yell on Aggro'),
+('-1461','Who dares steal my precious mount? You will pay for your insolence, mortal!','0','1','0','Lord Hel\'nurath - Yell on Aggro','0'),
 ('-1470','Ooo\,so strong! Happy Hallow\'s End, $n!','0','0','0','6929','0'),
 ('-1471','Chugga-chugga,woo-woo! Happy Hallow\'s End, $n!','0','0','0','11814','0'),
 ('-1472','I may have ninety-nine problems, but dancin\' ain\'t one of them! Happy Hallow\'s End, $n!','0','0','0','6746','0'),
